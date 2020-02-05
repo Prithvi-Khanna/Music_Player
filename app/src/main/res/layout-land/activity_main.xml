@@ -10,31 +10,43 @@
     <ImageView
         android:layout_width="250dp"
         android:layout_height="300dp"
-        android:src="@raw/music1"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="40dp"
         android:layout_alignParentTop="true"
-        />
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:src="@raw/music1" />
 
     <Button
         android:id="@+id/play"
         android:layout_width="120dp"
         android:layout_height="112dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="220dp"
-        android:background="@drawable/ic_play_circle_filled_black_24dp"
-        android:onClick="playBtnClick"
+        android:layout_marginBottom="246dp"
+        android:background="@drawable/ic_play_circle_filled_black_24dp" />
 
-        />
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignBaseline="@+id/play"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="354dp"
+        android:background="@drawable/ic_pause_circle_filled_black_24dp" />
 
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@+id/pause"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="90dp"
+        android:background="@drawable/ic_stop_black_24dp" />
 
     <SeekBar
         android:id="@+id/SeekBar"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="160dp"
+        android:layout_marginBottom="198dp"
 
         />
 
@@ -76,13 +88,14 @@
             android:layout_height="40dp"
             android:src="@drawable/ic_volume_down_black_24dp"
             />
+
         <SeekBar
             android:id="@+id/volumeBar"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:progress="50"
             android:max="100"
-            />
+            android:progress="50" />
+
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
