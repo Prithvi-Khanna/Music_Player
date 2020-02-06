@@ -106,7 +106,9 @@ public class MainActivity extends AppCompatActivity {
          }).start();
     }
 
-    private Handler handler = new Handler(){
+    private Handler handler = new Handler()
+    {
+
         @Override
         public void  handleMessage(Message m)
         {
